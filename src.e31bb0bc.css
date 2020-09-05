@@ -1182,9 +1182,11 @@ img {
   }
 }
 
+.products-section {
+  background: #ffffff;
+}
 @media screen and (max-width: 767px) {
   .products-section {
-    background: #ffffff;
     width: 100%;
     padding-top: 121px;
     padding-bottom: 98px;
