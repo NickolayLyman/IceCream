@@ -30,10 +30,10 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="page-header-order-btn">Buy now</button>
+        <button data-modal-open type="button" class="page-header-order-btn">Buy now</button>
     </div>
         <div class="menu-wrapper" data-menu>
-            <button type="button" class="order-btn">Buy now</button>
+            <button data-modal-open-mob type="button" class="order-btn">Buy now</button>
        <nav class="navigation">
         <ul class="navigation-list">
             <li class="navigation-list-item">
@@ -56,9 +56,9 @@
 </div>
 </div>
 </div>
-<!-- <div data-modal class="backdrop is-hidden">
+<div data-modal class="backdrop is-hidden">
     <form action="#" class="modal-form">
-        <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="modal-form-title">Форма заказа</h2>
         <button data-modal-close type="button" class="modal-form-close-btn">
             <svg class="modal-form-close-btn-icon" width="11" height="11"> 
                 <use href="./images/sprite.svg#icon-close-btn"></use>
@@ -85,17 +85,8 @@
                 <use href="./images/sprite.svg#icon-user-mail"></use>
             </svg>
         </div>
-        <textarea name="usesr-comment" placeholder="Комментарий" class="modal-form-comment"></textarea>
-        <label class="modal-form-option-label">
-            <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox">
-            <span class="modal-form-custom-checkbox">
-                <svg class="modal-form-checkbox-icon" width="11" height="8"> 
-                    <use href="./images/sprite.svg#icon-checkbox"></use>
-                </svg>
-            </span>
-            <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="">Условия договора</a></span>
-        </label>
+        <textarea name="usesr-comment" placeholder="Комментарий и детали заказа" class="modal-form-comment" required></textarea>
         <button data-modal-close type="submit" class="modal-form-btn modal-btn" >Отправить</button>
     </form>
-</div>  -->
+</div> 
 </header>
