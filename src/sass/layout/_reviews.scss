@@ -1,8 +1,26 @@
 .reviews {
+  position: relative;
+  padding-top: 628px;
+  padding-bottom: 212px;
   background-color: #ffffff;
-  padding-bottom: 865px;
-  // margin-bottom: 100px;
+  background-size: 100%;
+  display: block;
+  width: 100%;
 }
+.reviews-title {
+  opacity: 0;
+}
+.reviews-home-picture {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// .reviews {
+//   background-color: #ffffff;
+//   padding-bottom: 865px;
+// margin-bottom: 100px;
+// }
 // .reviews-section {
 // }
 // .reviews-title {
@@ -41,32 +59,32 @@
   padding-right: 50px;
   padding-bottom: 20px;
   padding-left: 50px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   margin-bottom: 30px;
-@media screen and (min-width: 768px) {
-  padding-top: 30px;
-  padding-right: 36px;
-  padding-bottom: 28px;
-  padding-left: 40px;
-  margin-bottom: 24px;
-    }
-@media screen and (min-width: 1200px) {
-  padding-top: 32px;
-  padding-right: 54px;
-  padding-bottom: 28px;
-  padding-left: 32px;
-  margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-right: 36px;
+    padding-bottom: 28px;
+    padding-left: 40px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-right: 54px;
+    padding-bottom: 28px;
+    padding-left: 32px;
+    margin-bottom: 50px;
+  }
 }
-  }
-  .reviews-section-circle {
-    display: inline-block;
-    cursor: pointer;
-    height: 6px;
-    width: 6px;
-    margin: 0 2px;
-    background-color: #C7133E;
-    border-radius: 50%;
-  }
+.reviews-section-circle {
+  display: inline-block;
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 2px;
+  background-color: #c7133e;
+  border-radius: 50%;
+}
 // .reviews-home-picture .photo-list-item-image {
 //   margin: 0 auto;
 // }
@@ -203,43 +221,43 @@
   }
   .reviews-text {
     // width: 100%;
-  // width: 280px;
-  // height: 308px;
-  background-image: linear-gradient(to bottom, transparent 26px, #E1E1E1 27px, transparent 28px,);
-  background-size: 100% 30px;
-  position: relative;
-  z-index: 1;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.55;
-  text-align: center;
-  color: $text-light-theme-color;
-  @media screen and (min-width: 768px) {
-     font-size: 14px;
-    line-height: 2.16;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-       line-height: 1.86;
-       }
-    &::before {
-        content: " ";
-        position: absolute;
-        left: -25px;
-        top:-15px;
-        z-index: -1;
-        display: block;
-        background-image: url(../images/zapyataya.png);
-    width: 54px;
-    height: 40px;
+    // width: 280px;
+    // height: 308px;
+    background-image: linear-gradient(to bottom, transparent 26px, #e1e1e1 27px, transparent 28px);
+    background-size: 100% 30px;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    color: $text-light-theme-color;
     @media screen and (min-width: 768px) {
-        left: -20px;
-        top:-17px;
+      font-size: 14px;
+      line-height: 2.16;
     }
     @media screen and (min-width: 1200px) {
-        left: -9px;
-        top:-15px;
+      font-size: 16px;
+      line-height: 1.86;
     }
+    &::before {
+      content: ' ';
+      position: absolute;
+      left: -25px;
+      top: -15px;
+      z-index: -1;
+      display: block;
+      background-image: url(../images/zapyataya.png);
+      width: 54px;
+      height: 40px;
+      @media screen and (min-width: 768px) {
+        left: -20px;
+        top: -17px;
+      }
+      @media screen and (min-width: 1200px) {
+        left: -9px;
+        top: -15px;
+      }
     }
   }
 
@@ -253,28 +271,26 @@
     text-align: center;
     color: $text-light-theme-color;
     // margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
-    // margin-bottom: 35px;
+    @media screen and (min-width: 768px) {
+      // margin-bottom: 35px;
     }
-    }
+  }
   input {
     display: none;
   }
 
   .controls {
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    left: 51%;
-    top: 445px;
-    margin-left: -69px;
-  }
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      left: 51%;
+      top: 445px;
+      margin-left: -69px;
+    }
 
     // position: absolute;
     // left: 50%;
     // margin-left: -68px;
     // bottom: 40px;
-
-    
 
     // position: absolute;
     // left: 50%;
