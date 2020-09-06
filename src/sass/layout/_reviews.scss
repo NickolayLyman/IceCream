@@ -1,14 +1,21 @@
 .reviews {
   position: relative;
-  padding-top: 628px;
-  padding-bottom: 212px;
   background-color: #ffffff;
   background-size: 100%;
   display: block;
   width: 100%;
+@media screen and (max-width: 767px) {
+  padding-top: 80px;
+  padding-bottom: 680px
 }
-.reviews-title {
-  opacity: 0;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  padding-top: 200px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  padding-top: 270px;
+  padding-bottom: 212px;
+}
 }
 .reviews-home-picture {
   position: absolute;
@@ -16,45 +23,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-// .reviews {
-//   background-color: #ffffff;
-//   padding-bottom: 865px;
-// margin-bottom: 100px;
-// }
-// .reviews-section {
-// }
-// .reviews-title {
-//   // color: #000000;
-//   // overflow: hidden;
-//   opacity: 0;
-// }
-
-// .reviews-home-picture {
-//   display: block;
-//   position: relative;
-//   text-align: center;
-
-//   max-width: 100%;
-//   bottom: 50px;
-//   left: 50px;
-//   transform: translate(50% 50%);
-//   margin-right: 0;
-
-//   @media screen and (max-width: 767px) {
-//     margin-bottom: 80px;
-//   }
-
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     margin-bottom: 121px;
-//   }
-//   @media screen and (max-width: 1200px) {
-//     margin-bottom: 123px;
-//   }
-// }
 .reviews-text-wrapper {
-  // width: 100%;
-  // width: 280px;
-  // height: 308px;
   padding-top: 71px;
   padding-right: 50px;
   padding-bottom: 20px;
@@ -73,7 +42,7 @@
     padding-right: 54px;
     padding-bottom: 28px;
     padding-left: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
 }
 .reviews-section-circle {
@@ -85,117 +54,27 @@
   background-color: #c7133e;
   border-radius: 50%;
 }
-// .reviews-home-picture .photo-list-item-image {
-//   margin: 0 auto;
-// }
+.review-testimonials-picture {
+@media screen and (max-width: 767px) {
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 1199px) {
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 1200px) {
+  margin-bottom: 15px;
+}
+}
 
-// .review-testimonials-picture {
-//   position: relative;
-//   left: 40%;
-
-//   @media screen and (max-width: 768px) {
-//     margin-bottom: 15px;
-//   }
-
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     margin-bottom: 19px;
-//   }
-//   @media screen and (max-width: 1200px) {
-//     margin-bottom: 29px;
-//   }
-// }
-// .review-div-text {
-//   background: #fafafa;
-//   @media screen and (max-width: 768px) {
-//     margin-bottom: 30px;
-//     height: 308px;
-//     width: 208px;
-//   }
-
-//   @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     margin-bottom: 58px;
-//     width: 620px;
-//     height: 164px;
-//   }
-//   @media screen and (max-width: 1200px) {
-//     margin-bottom: 15px;
-//     width: 926px;
-//     height: 138x;
-//   }
-// }
-// .reviews-text {
-//   font-weight: 500;
-//   font-size: 12px;
-//   line-height: 2.55;
-//   text-align: center;
-//   color: #000000;
-//   text-decoration: underline;
-//   text-decoration-color: #e1e1e1;
-// }
-// // .aboutus-item:nth-child(1)::before {
-// //   background-image: url(../img/o-nas/antenna.svg);
-// // }
-// // .reviews-text::before {
-// //   // content: '';
-// //   background-image: url(../);
-// // }
-
-// .circle {
-//   display: inline-block;
-//   cursor: pointer;
-//   height: 6px;
-//   width: 6px;
-//   margin: 0 2px;
-//   background-color: #c7133e;
-//   border-radius: 50%;
-// }
-// .name-sity {
-//   text-align: center;
-//   font-weight: 500;
-//   font-size: 20px;
-//   line-height: 1.8;
-//   text-align: center;
-//   color: #000000;
-// }
-// .emily {
-//   text-align: center;
-// }
-// .emily:focus + .monika .emily:hover + .monika {
-//   opacity: 0;
-// }
-
-// .monika {
-//   text-align: center;
-// }
-// .angelika {
-//   text-align: center;
-// }
-// .review-div-icons {
-//   display: block;
-//   text-align: center;
-//   margin: 0 auto;
-// }
-// .review-icons {
-//   width: 12px;
-//   height: 12px;
-//   text-align: center;
-//   margin: 0 auto;
-// }
 .wrapper {
   position: relative;
-  // bottom: 0;
-  // left: 0;
-  // width: 208px;
-  // height: 308px;
   margin: 0 auto;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    width: 382px;
     height: 620px;
   }
   @media screen and (min-width: 1200px) {
-    width: 926px;
     height: 350px;
   }
   .review-testimonials-picture {
@@ -205,24 +84,21 @@
     position: relative;
     width: inherit;
     height: inherit;
-    // overflow: hidden;
     color: black;
+    
 
     .slides {
       position: absolute;
       width: inherit;
       height: inherit;
       width: 100%;
-      // margin-bottom: 30px;
+      
       opacity: 0;
       z-index: 0;
       transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   .reviews-text {
-    // width: 100%;
-    // width: 280px;
-    // height: 308px;
     background-image: linear-gradient(to bottom, transparent 26px, #e1e1e1 27px, transparent 28px);
     background-size: 100% 30px;
     position: relative;
@@ -270,37 +146,28 @@
     line-height: 1.86;
     text-align: center;
     color: $text-light-theme-color;
-    // margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
-      // margin-bottom: 35px;
-    }
   }
   input {
     display: none;
   }
 
-  .controls {
-    @media screen and (max-width: 767px) {
-      position: absolute;
+  .controls { 
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    position: absolute;
       left: 51%;
-      top: 445px;
-      margin-left: -69px;
+      top: 457px;
+      margin-left: -70px;
     }
-
-    // position: absolute;
-    // left: 50%;
-    // margin-left: -68px;
-    // bottom: 40px;
-
-    // position: absolute;
-    // left: 50%;
-    // margin-left: -68px;
-    // bottom: 190px;
-
-    // position: absolute;
-    // left: 50%;
-    // margin-left: -69px;
-
+ @media screen and (min-width: 768px) and (max-width: 1199px) {
+  position: absolute;
+  left: 41%;
+      bottom: 260px;
+ }
+ @media screen and (min-width: 1200px) {
+  position: absolute;
+      left: 44%;
+      bottom: 0%;
+ }
     label {
       position: relative;
       cursor: pointer;
