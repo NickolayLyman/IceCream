@@ -16,10 +16,6 @@
   top: -84px;
   text-align: center;
   margin-bottom: 54px;
-  //   position: absolute;
-  //   top: -84px;
-  //   left: 50%;
-  //   transform: translate(50%, 50%);
   @media screen and (min-width: 768px) {
     top: -78px;
     display: flex;
@@ -40,7 +36,7 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     @media screen and (max-width: 767px) {
-      max-width: 220px;
+      max-width: 100%;
       padding: 43px 21px 43px 21px;
       margin-right: auto;
       margin-left: auto;
