@@ -1,6 +1,6 @@
 .products-section{
-  @media screen and (max-width: 767px){
   background: $text-dark-theme-color;
+  @media screen and (max-width: 767px){
   width: 100%;
   padding-top: 121px;
   padding-bottom: 98px;
@@ -169,8 +169,8 @@
   margin-bottom: 32px;
   margin-top: 38px;
  }
-
 }
+
 .choice-description{
   margin-bottom: 30px;
   margin-top: 32px;

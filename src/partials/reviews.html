@@ -3,30 +3,136 @@
   <div class="reviews-section container">
     <h2 class="reviews-title">Rewiew</h2>
     <div class="reviews-home-picture">
-      <picture>
-        <source srcset="./images/mobile/reviews-section/home-pic-mob@1x.jpg 1x, ./images/mobile/reviews-section/home-pic-mob@2x.jpg 2x" media="(max-width: 767px)" />
-        <source srcset="./images/tablet/reviews-section/home-pic-tab@1x.jpg 1x, ./images/tablet/reviews-section/home-pic-tab@2x.jpg 2x" media="(max-width: 1199px)" />
-        <source srcset="./images/desktop/reviews-section/home-pic-desc@1x.jpg 1x, ./images/desktop/reviews-section/home-pic-desc@2x.jpg 2x" media="(min-width: 1200px)" />
-        <img src="./images/mobile/reviews-section/home-pic-mob@1x.jpg" alt="Фото продуктов компании" class="photo-list-item-image" />
+      <picture class="reviews-home-picture">
+        <source srcset="./images/mobile/reviews-section/mobile@1x.png 1x" media="(max-width: 767px)" />
+        <source srcset="./images/tablet/reviews-section/tablet-reviews@1x.png 1x" media="(max-width: 1199px)" />
+        <source srcset="./images/desktop/reviews-section/desk@1x.png 1x" media="(min-width: 1200px)" />
+        <img src="./images/mobile/reviews-section/mobile@1x.png" alt="Фото продуктов компании" class="img-home" />
       </picture>
     </div>
-    <div class="review-testimonials-picture">
-      <picture>
-        <source srcset="./images/mobile/reviews-section/testimonials-mob@1x.jpg 1x, ./images/mobile/reviews-section/testimonials-mob@2x.jpg 2x" media="(max-width: 767px)" />
-        <source srcset="./images/tablet/reviews-section/testimonials-tab@1x.jpg 1x, ./images/tablet/reviews-section/testimonials-tab@2x.jpg 2x" media="(max-width:1199px)" />
-        <source srcset="./images/desktop/reviews-section/testimonials-desc@1x.jpg 1x, ./images/desktop/reviews-section/testimonials-desc@2x.jpg 2x" media="(min-width:1200px)" />
-        <img src="./images/mobile/reviews-section/home-pic-mob@1x.jpg" alt="Фото девушки в восторге от продукции" class="photo-list-item-image" />
-      </picture>
-    </div>
+    <!-- <div class="review-testimonials-picture">
+      <ul>
+        emily -->
+    <!-- <li class="emily">
+          <picture>
+            <source
+              srcset="./images/mobile/reviews-section/testimonials-mob@1x.jpg 1x, ./images/mobile/reviews-section/testimonials-mob@2x.jpg 2x"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/tablet/reviews-section/testimonials-tab@1x.jpg 1x, ./images/tablet/reviews-section/testimonials-tab@2x.jpg 2x"
+              media="(max-width:1199px)" />
+            <source
+              srcset="./images/desktop/reviews-section/testimonials-desc@1x.jpg 1x, ./images/desktop/reviews-section/testimonials-desc@2x.jpg 2x"
+              media="(min-width:1200px)" />
+            <img src="./images/mobile/reviews-section/testimonials-mob@1x.jpg" alt="Фото девушки в восторге от продукции"
+              class="" />
+          </picture>
+          </div> -->
 
-    <div class="review-div-text">
-      <p class="reviews-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-    </div>
-    <div style="text-align: center">
-      <span class="circle" onclick="currentSlide(1)"></span>
-      <span class="circle" onclick="currentSlide(2)"></span>
-      <span class="circle" onclick="currentSlide(3)"></span>
+    <div class="wrapper">
+      <input type="radio" name="point" id="slide1" checked />
+      <input type="radio" name="point" id="slide2" />
+      <input type="radio" name="point" id="slide3" />
+      <div class="slider">
+        <div class="slides slide1">
+          <div class="slider-item">
+            <ul class="reviews-list">
+              <li>
+                <picture class="review-testimonials-picture">
+                  <source srcset="./images/mobile/reviews-section/testimonials-mob@1x.jpg 1x, ./images/mobile/reviews-section/testimonials-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                  <source srcset="./images/tablet/reviews-section/testimonials-tab@1x.jpg 1x, ./images/tablet/reviews-section/testimonials-tab@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/desktop/reviews-section/testimonials-desc@1x.jpg 1x, ./images/desktop/reviews-section/testimonials-desc@2x.jpg 2x" media="(min-width:1200px)" />
+                  <img src="./images/mobile/reviews-section/testimonials-mob@1x.jpg" alt="Фото девушки в восторге от продукции" class="photo-list-item-image" />
+                </picture>
+              </li>
+              <li class="reviews-text-wrapper">
+                <p class="reviews-text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </li>
+              <div style="text-align: center">
+                <!--three-dots-->
+                <span class="reviews-section-circle" onclick="currentSlide(1)"></span>
+                <span class="reviews-section-circle" onclick="currentSlide(2)"></span>
+                <span class="reviews-section-circle" onclick="currentSlide(3)"></span>
+              </div>
+              <li class="reviews-text-name">Emily, Los Angeles</li>
+            </ul>
+          </div>
+        </div>
+        <div class="slides slide2">
+          <div class="slider-item">
+            <ul>
+              <li>
+                <picture class="review-testimonials-picture">
+                  <source srcset="./images/mobile/reviews-section/testimonials-second-mob@1x.jpg 1x, ./images/mobile/reviews-section/testimonials-second-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                  <source srcset="./images/tablet/reviews-section/testimonials-second-tab@1x.jpg 1x, ./images/tablet/reviews-section/testimonials-second-tab@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source
+                    srcset="./images/desktop/reviews-section/testimonials-second-desc@1x.jpg 1x, ./images/desktop/reviews-section/testimonials-second-desc@2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./images/mobile/reviews-section/testimonials-second-mob@1x.jpg" alt="Фото девушки в восторге от продукции" class="photo-list-item-image" />
+                </picture>
+              </li>
+              <li class="reviews-text-wrapper">
+                <p class="reviews-text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </li>
+              <div style="text-align: center">
+                <!--three-dots-->
+                <span class="reviews-section-circle" onclick="currentSlide(1)"></span>
+                <span class="reviews-section-circle" onclick="currentSlide(2)"></span>
+                <span class="reviews-section-circle" onclick="currentSlide(3)"></span>
+              </div>
+              <li class="reviews-text-name">Hanna, New York</li>
+            </ul>
+          </div>
+        </div>
+        <div class="slides slide3">
+          <div class="slider-item">
+            <ul>
+              <li>
+                <picture class="review-testimonials-picture">
+                  <source srcset="./images/mobile/reviews-section/testimonials-third-mob@1x.jpg 1x, ./images/mobile/reviews-section/testimonials-third-mob@2x.jpg 2x" media="(max-width: 767px)" />
+                  <source srcset="./images/tablet/reviews-section/testimonials-third-tab@1x.jpg 1x, ./images/tablet/reviews-section/testimonials-third-tab@2x.jpg 2x" media="(max-width:1199px)" />
+                  <source srcset="./images/desktop/reviews-section/testimonials-third-desc@1x.jpg 1x, ./images/desktop/reviews-section/testimonials-third-desc@2x.jpg 2x" media="(min-width:1200px)" />
+                  <img src="./images/mobile/reviews-section/testimonials-third-mob@1x.jpg" alt="Фото девушки в восторге от продукции" class="photo-list-item-image" />
+                </picture>
+              </li>
+              <li class="reviews-text-wrapper">
+                <p class="reviews-text">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </li>
+              <div style="text-align: center">
+                <span class="reviews-section-circle" onclick="currentSlide(1)"></span>
+                <span class="reviews-section-circle" onclick="currentSlide(2)"></span>
+                <span class="reviews-section-circle" onclick="currentSlide(3)"></span>
+              </div>
+              <li class="reviews-text-name">Monika, Lawrence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label for="slide1">
+          <svg width="12" height="12" hidden>
+            <use href="./images/sprite.svg#icon-home"></use>
+          </svg>
+        </label>
+        <label for="slide2">
+          <svg width="12" height="12" hidden>
+            <use href="./images/sprite.svg#icon-home"></use>
+          </svg>
+        </label>
+        <label for="slide3">
+          <svg width="12" height="12" hidden>
+            <use href="./images/sprite.svg#icon-home"></use>
+          </svg>
+        </label>
+      </div>
     </div>
   </div>
 </section>
-
